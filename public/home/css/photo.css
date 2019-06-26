@@ -1,0 +1,61 @@
+@CHARSET "UTF-8";
+
+#photo {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#photo .photo-item {
+    width: 236px;
+    margin-bottom: 16px;
+}
+
+#photo .photo-item img {
+    transition: all 0.5s ease;
+}
+
+
+#photo .photo-item img:hover {
+    transform: scale(1.3);
+    transition: all 1s ease 0s;
+}
+
+#photo .photo-desc {
+    display: block;
+    line-height: 1.35em;
+    padding: 10px 16px;
+    overflow: hidden;
+    word-break: break-all;
+    word-wrap: break-word;
+    width: 100%;
+    font-size: 12px;
+    margin: 0;
+}
+
+#photo .photo-inner{
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+    overflow: hidden;
+}
+
+#photo .photo-item .photo-inner a{
+    display:block;
+    max-width:100%;
+    overflow:hidden
+
+}
+
+#more{
+    background-size: 25px;
+    height: 100px;
+}
+
+#more.show{
+    background: url('../image/loader1.gif') no-repeat center;
+}
+
+#more.end{
+    background: url('../image/end.png') no-repeat center;
+}

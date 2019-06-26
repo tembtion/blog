@@ -1,0 +1,80 @@
+@CHARSET "UTF-8";
+body {
+font-family: "helvetica neue",arial,sans-serif;
+    font-size: 14px;
+    margin-top: 50px;
+    color: #444;
+}
+
+#photo {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#photo .photo-inner{
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+    padding: 10px;
+}
+
+#photo .link {
+    box-sizing: content-box;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+#photo .link img.large {
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+#photo .link img.normal {
+    width: 25%;
+}
+
+#photo .link img {
+    float: left;
+    /*height: 70px;*/
+    /*margin: 0 3px 3px 0;*/
+    /*width: 25%;*/
+}
+
+#photo .link .over {
+    background: rgba(0, 0, 0, 0) url("../image/board_info_cover.png") repeat-x scroll 0 0;
+    height: 289px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+#photo .link .over:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#photo .over h3 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    overflow: hidden;
+    padding: 8px 0 0 8px;
+    text-overflow: ellipsis;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
+    margin:0px;
+}
+
+#more{
+    background-size: 25px;
+    height: 100px;
+}
+
+#more.show{
+    background: url('../image/loader1.gif') no-repeat center;
+}
+
+#more.end{
+    background: url('../image/end.png') no-repeat center;
+}
